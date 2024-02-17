@@ -1,4 +1,4 @@
-package Tests;
+package JavaMarathone2020.JavaMarathon2020.src.test.java.Tests;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
