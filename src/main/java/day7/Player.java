@@ -16,11 +16,13 @@ public class Player {
     }
 
     public void run() {
-        if (stamina == 0){
+        if (stamina == 0)
+            return;
+
+        stamina--;
+
+        if (stamina == 0)
             countPlayers--;
-        } else {
-            stamina -= 1;
-        }
     }
 
     public int getStamina() {
@@ -28,9 +30,8 @@ public class Player {
     }
 
     public static void info() {
-        int voidPositions = 6 - countPlayers;
         if (countPlayers < 6) {
-            System.out.println("Команды неполные. На поле еще есть " + voidPositions + " свободных мест");
+            System.out.println("Команды неполные. На поле еще есть " + (6 - countPlayers) + " свободных мест");
         } else {
             System.out.println("На поле нет свободных мест");
         }

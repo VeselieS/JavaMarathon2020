@@ -15,7 +15,7 @@ public class Task2 {
         Player.info();
 
         System.out.println(player1.getStamina());
-        for (int i = player1.getStamina(); i >= 0; i--) {
+        for (int i = player1.getStamina(); i > 0; i--) {
             player1.run();
         }
         System.out.println(player1.getStamina());
