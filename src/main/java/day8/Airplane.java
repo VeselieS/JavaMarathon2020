@@ -3,11 +3,11 @@ package JavaMarathone2020.JavaMarathon2020.src.main.java.day8;
 public class Airplane {
     private String producer;
     private int year;
-    private double length;
-    private double weight;
-    private double fuel;
+    private int length;
+    private int weight;
+    private int fuel;
 
-    public Airplane(String producer, int year, double length, double weight) {
+    public Airplane(String producer, int year, int length, int weight) {
         this.producer = producer;
         this.year = year;
         this.length = length;
@@ -15,7 +15,7 @@ public class Airplane {
         this.fuel = 0;
     }
 
-    public void fillUp(double up) {
+    public void fillUp(int up) {
         fuel += up;
     }
 
@@ -27,19 +27,19 @@ public class Airplane {
         this.year = year;
     }
 
-    public void setLength(double length) {
+    public void setLength(int length) {
         this.length = length;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(int weight) {
         this.weight = weight;
     }
 
-    public void setFuel(double fuel) {
+    public void setFuel(int fuel) {
         this.fuel = fuel;
     }
 
-    public double getFuel() {
+    public int getFuel() {
         return fuel;
     }
 
