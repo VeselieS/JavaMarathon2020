@@ -1,8 +1,8 @@
-//package Tests.day11;
+//package JavaMarathone2020.JavaMarathon2020.src.test.java.Tests.day11;
 //
-//import Tests.AbstractTest;
-//import day11.task1.Courier;
-//import day11.task1.Warehouse;
+//import JavaMarathone2020.JavaMarathon2020.src.test.java.Tests.AbstractTest;
+//import JavaMarathone2020.JavaMarathon2020.src.main.java.day11.task1.Courier;
+//import JavaMarathone2020.JavaMarathon2020.src.main.java.day11.task1.Warehouse;
 //import org.junit.jupiter.api.BeforeEach;
 //import org.junit.jupiter.api.Test;
 //import org.laughingpanda.beaninject.Inject;
@@ -30,7 +30,7 @@
 //    @Test
 //    void doWorkOnceWarehouse() {
 //        courier.doWork();
-//        assertEquals(1, w.getCountDeliveredOrders(),
+//        assertEquals(1, w.getCountOrder(),
 //                "Однократный вызов метода doWork() на новом объекте Courier. Проверка поля countDeliveredOrders" +
 //                        " у Warehouse");
 //    }
@@ -47,7 +47,7 @@
 //    void doWorkTwiceWarehouse() {
 //        courier.doWork();
 //        courier.doWork();
-//        assertEquals(2, w.getCountDeliveredOrders(),
+//        assertEquals(2, w.getCountOrder(),
 //                "Двукратный вызов метода doWork() на новом объекте Courier. Проверка поля countDeliveredOrders" +
 //                        " у Warehouse");
 //    }
